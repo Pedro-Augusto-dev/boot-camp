@@ -1,18 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap'); 
 
-#body {
-    margin: 0px;
-    padding: 0px;
+:root {
+    --azul-form: #0C70F2;
+    --cinza-form: #303030;
+    --blue-hover: #006eff;
 
-    background: linear-gradient(180deg, rgba(12, 112, 242, 8.5) 19.91%, Orgba(12, 112, 242, 0) 24.84%), #383839; 
-    background-repeat: no-repeat;
+    --font-padrao: 'Inter';
+
 }
 
+body {
+    margin: 0%;
+    padding: 0px;
+    background: linear-gradient(180deg, #0C70F2 20%, black 25%), #303030; 
+    background-repeat:no-repeat;
+}
 #container {
     width: 100%;
     height: 100px;
     border: 1px solid black;
-    background-color: #303030;
+    background-color: var(--cinza-form);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +31,10 @@
     width: 45%;
     justify-content: space-around; 
     align-items: center;
-    margin-left: 5%;
+    margin-right: 5%;
 }
 #container div a {
-    font-family: "inter";
+    font-family: var(--font-padrao);
     font-size: 25px;
     font-weight: 600;
     color: white;
@@ -37,16 +44,134 @@
     color: #006eff;
 }
 #container button {
-    margin-right: 20px;
+    text-align: center;
+    margin-right: 50px;
+    padding: 0;
     width: 80px;
     height: 39px;
     background-color: #0C70F2;
     border: 0px;
     font-family: "inter";
     font-size: 20px;
-    font-size: 600;
     color: white;
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
 
+}
+#black {
+    background-color: black;
+    font-weight: bold;
+    padding: 5px;
+
+}
+section{
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-padrao);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    
+}
+header  {
+    color:white;
+    font-family: var(--font-padrao);
+    justify-content:space-around;
+    justify-content: space-between;
+}
+
+header h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-family: var(--font-padrao);
+}
+header h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 100px;
+    font-family: var(--font-padrao);
+}
+form {
+    margin-top: 70px;
+    font-family: var(--font-padrao);
+    font-size: 30px;
+    font-weight: 600;
+    width: 900px;
+}
+.styleForm  {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-padrao);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+form div input{
+    border-radius: 10px;
+    border:0;
+    height: 35px;
+    font-size: 20px;
+    padding:15px ;
+    background-color: rgba(255, 255, 255, 0.9);
+    
+}
+input[type="submit"]{
+    font-size: var(--font-padrao);
+    color: white;
+    text-align: center;
+    background-color: var(--azul-form);
+    border-radius: 10px;
+    border: 0;
+    font-size: 20px;
+    margin-top: 25px;
+    width: 95%;
+    height: 40px;
+    font-size: 30px;
+    font-weight: 400;
+    width: 100%;
+    background-color: var(--blue-hover);
+}
+#person {
+    margin-right: 25px;
+}
+form label {
+    margin: 10px 0px 10px 0px;
+    
+}
+form input::placeholder {
+    color: rgba(57, 57, 57, 0.5);
+}
+.custon label {
+    font-size: 25px;
+
+}
+.custon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+input[type="checkbox"] {
+    transform: scale(1.7);
+}
+input[type="submit"]{
+    font-family: var(--font-padrao);
+    background-color: var(--blue-hover);
+    width: 100%;
+    height: 56px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    font-size: 33px;
+    font-weight: 600;
+    margin-top: 80px;
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    cursor: pointer;
 }
